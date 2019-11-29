@@ -28,8 +28,8 @@ var Affichage =  (function(){
             INPUT.setAttribute('type', 'radio');
             INPUT.setAttribute('name', 'selection');
             INPUT.setAttribute('id', myArray[0]);
-            INPUT.setAttribute("onClick", 'ChoixIng(' + idx + ')');
-
+            INPUT.setAttribute("onClick", 'ChoixIng([' + myArray.ingrédients + '])');
+            console.log('input');
             TD.appendChild(INPUT)
         },
 //On affiche les ingrédients sélectionnés et on ajoute 

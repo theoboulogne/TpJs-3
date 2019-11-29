@@ -6,6 +6,7 @@ var Ligne = (function () { //Génère un tableau avec les informations à affich
                 listeIngredients += ingredients[plat.ingrédients[i]].name + ", ";
                 prixTotal += parseFloat(ingredients[plat.ingrédients[i]].prix);
             }
+            console.log("ligne")
             Affichage.LignePlat([plat.name,plat.preparation+' min',listeIngredients,plat.prixPreparation+' €',prixTotal+' €'], idx);
         },
         Ingredient: (ingredient) => { 
