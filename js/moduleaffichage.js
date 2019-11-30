@@ -17,7 +17,7 @@ var Affichage =  (function(){
         },
 //On appelle 'Ligne' puis on ajoute une balise <input> de type radio 
 //pour sélectionner les ingrédients affichés
-        LignePlat : (myArray, idx) => 
+        LignePlat : (myArray, tab) => 
         {
             let TR = Affichage.Ligne(myArray, 'plat');
 
@@ -28,8 +28,8 @@ var Affichage =  (function(){
             INPUT.setAttribute('type', 'radio');
             INPUT.setAttribute('name', 'selection');
             INPUT.setAttribute('id', myArray[0]);
-            INPUT.setAttribute("onClick", 'ChoixIng([' + myArray.ingrédients + '])');
-            console.log('input');
+            INPUT.setAttribute("onClick", 'ChoixIng([' + tab + '])');
+            console.log(tab);
             TD.appendChild(INPUT)
         },
 //On affiche les ingrédients sélectionnés et on ajoute 

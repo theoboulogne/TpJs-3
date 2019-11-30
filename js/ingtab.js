@@ -17,12 +17,12 @@ var Generation = () => {
 };
 
 // Génère le tableau si nécessaire, sinon le vide puis le remplit des ingrédients du plat sélectionné
-function ChoixIng(tab, value) { 
+function ChoixIng(tab) { 
     if(document.getElementById('suppr')==undefined) {Generation();}
     else while(document.getElementById('suppr')){
         let suppr = document.getElementById('suppr');
-        suppr.remove();
+        suppr.remove(); // remove juste les td ?
     }
-    console.log(value);
-    Table.Ingredient(tab, value);
+    console.log(tab);
+    Table.Ingredient(tab);
 }

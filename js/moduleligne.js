@@ -1,13 +1,13 @@
 var Ligne = (function () { //Génère un tableau avec les informations à afficher et affiche une ligne
     return {
-        Plat: (plat, idx) => {
+        Plat: (plat) => {
             let listeIngredients = "", prixTotal = parseFloat(plat.prixPreparation);
             for(let i in plat.ingrédients){
                 listeIngredients += ingredients[plat.ingrédients[i]].name + ", ";
                 prixTotal += parseFloat(ingredients[plat.ingrédients[i]].prix);
             }
             console.log("ligne")
-            Affichage.LignePlat([plat.name,plat.preparation+' min',listeIngredients,plat.prixPreparation+' €',prixTotal+' €'], idx);
+            Affichage.LignePlat([plat.name,plat.preparation+' min',listeIngredients,plat.prixPreparation+' €',prixTotal+' €'], plat.ingrédients);
         },
         Ingredient: (ingredient) => { 
             let tab = [ingredient.name, '0', ingredient.prix + ' €'];
