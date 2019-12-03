@@ -20,6 +20,7 @@ var Affichage =  (function(){
         LignePlat : (myArray, tab) => 
         {
             let TR = Affichage.Ligne(myArray, 'plat');
+            TR.setAttribute("id", "supprPlat");
 
             let TD = document.createElement('td');
             TR.appendChild(TD);
@@ -37,7 +38,7 @@ var Affichage =  (function(){
         LigneIng : (myArray) => 
         {
             let TR = Affichage.Ligne(myArray, 'ing');
-            TR.setAttribute("id", "suppr");
+            TR.setAttribute("id", "supprIng");
             TR.setAttribute("class", "bg-info");
         },
 
