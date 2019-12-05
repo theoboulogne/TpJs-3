@@ -18,7 +18,7 @@ var RecherchePlat = (function () { //Génère un tableau avec les informations �
             var Resultat = [];
             for(let i  in tab){
                 normaliseplat = tab[i].name.toUpperCase();
-                if(normaliseplat.indexOf(normalisefiltre) > -1){ // Si on a trouver notre filtre
+                if(normaliseplat.indexOf(normalisefiltre) > -1){ // Si on a trouvé notre filtre
                     console.log(tab[i])
                     Resultat.push(tab[i]);
                 }
@@ -77,3 +77,16 @@ var RechercheIng = (function () { //Génère un tableau avec les informations à
         },
     }
 })();
+
+window.onload = function(){
+    
+    var form = document.getElementById("auto-suggest");
+	var input = form.search;
+
+	input.onkeyup = function(){
+		var txt = this.value;
+        let Tab = RecherchePlat.name(txt, plats);
+        Table.Plat(Tab);
+	};
+};
+

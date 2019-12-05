@@ -12,6 +12,10 @@
     <body>
         <nav class="navbar navbar-expand-md">
                 
+                <form id="auto-suggest" action="#" method="post">
+                    <input type="text" class="search" name="search" value="Rechercher..." onfocus="if(this.value=='Rechercher...')this.value=''" onblur="if(this.value=='')this.value='Rechercher...'" autocomplete="off"/>
+                </form>
+
                 <img src="logo.jpeg" width="75" height="75" alt="">
                 <a class="navbar-brand" href="#">Papa's Restaurant</a>
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">

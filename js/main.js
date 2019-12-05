@@ -9,6 +9,7 @@ ChoixIng(RechercheIng.name('s', ingredients))
 Table.Plat(RecherchePlat.name('pate', plats)); 
 
 
+
 // Fonctionnalités fonctionnelles à implémenter:
 
 //On ajoute un plat( à relier au formulaire d'event pour en ajouter )
@@ -39,3 +40,4 @@ ChoixIng(RechercheIng.prix(0, ingredients))
 
 //Changement de filtre (prix décroissant) de la barre de recherche
 ChoixIng(RechercheIng.local(0, ingredients)) 
+
