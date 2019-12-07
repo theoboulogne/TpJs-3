@@ -2,7 +2,7 @@
 var Table = (function () {
     return {
         Plat : (tab) => {
-            if(document.getElementById('supprIng')!=undefined) {
+            if(document.getElementById('supprPlat')!=undefined) {
                 reset('supprPlat');
             }
             for(let i in tab) {

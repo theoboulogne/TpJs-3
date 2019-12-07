@@ -57,3 +57,32 @@ var Affichage =  (function(){
 
     }
 })();
+
+
+var Liste =  (function(){
+    return{
+        Ingredient : () => 
+        {
+        /*
+            <div class="list-group-item list-group-item-info">
+                <input type="checkbox"> 
+                <span class="list-group-item-text"> Default</span>
+            </div>
+        */
+
+            let elem = document.getElementById("listeingredients");
+            for(let i in ingredients){
+                let DIV = document.createElement('div');
+                DIV.setAttribute("class", "list-group-item list-group-item-info ");
+                let INPUT = document.createElement('input');
+                INPUT.setAttribute("type", "checkbox");
+                let SPAN = document.createElement('span');
+                SPAN.setAttribute("class", "list-group-item-text ");
+                SPAN.innerHTML = "&nbsp" + ingredients[i].name;
+                DIV.appendChild(INPUT);
+                DIV.appendChild(SPAN);
+                elem.appendChild(DIV);
+            }
+        },
+    }
+})();

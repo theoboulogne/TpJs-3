@@ -5,11 +5,12 @@ html {
 
 body {
     background-image:url("back.png");
-    background-position: center; /* Center the image */
+    background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     color: #EBEBEB;
     background-color:white;
+    padding-bottom: 50px; /* marge en bas pour le tableau des ingrédients */
 }
 
 .header{    
@@ -79,4 +80,11 @@ body {
 }
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.container { 
+  border:2px solid #ccc; 
+  width:500px; 
+  height: 300px; 
+  overflow-y: auto;
 }
