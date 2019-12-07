@@ -76,6 +76,7 @@ var Liste =  (function(){
                 DIV.setAttribute("class", "list-group-item list-group-item-info ");
                 let INPUT = document.createElement('input');
                 INPUT.setAttribute("type", "checkbox");
+                INPUT.setAttribute("value", ingredients[i].idIng);
                 let SPAN = document.createElement('span');
                 SPAN.setAttribute("class", "list-group-item-text ");
                 SPAN.innerHTML = "&nbsp" + ingredients[i].name;
