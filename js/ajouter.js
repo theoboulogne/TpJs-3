@@ -15,6 +15,7 @@ var AddDish = (function (){
 	var input = form.search;
     document.location.href="ajoutPLat.html";
 
+    Ajouter.Plat({ name: 'Test', preparation: '30', ingrédients: ['17', '13', '20', '18', '1', '2', '3'], prixPreparation: '3' });
     
     
 });
