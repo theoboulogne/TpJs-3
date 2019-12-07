@@ -1,5 +1,6 @@
-var Ajouter = (function () { //Génère un tableau avec les informations à afficher et affiche une ligne
-    return {
+//Génère un tableau avec les informations à afficher et affiche une ligne
+var Ajouter = (function () {
+    return { 
         Plat: (plat) => {
             plats.push(plat);
         },
@@ -8,3 +9,12 @@ var Ajouter = (function () { //Génère un tableau avec les informations à affi
         },
     }
 })();
+
+var AddDish = (function (){
+    var form = document.getElementById("auto-suggest");
+	var input = form.search;
+    document.location.href="ajoutPLat.html";
+
+    
+    
+});

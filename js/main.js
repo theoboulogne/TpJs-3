@@ -9,7 +9,6 @@ ChoixIng(RechercheIng.name('s', ingredients))
 Table.Plat(RecherchePlat.name('pate', plats)); 
 
 
-
 // Fonctionnalités fonctionnelles à implémenter:
 
 //On ajoute un plat( à relier au formulaire d'event pour en ajouter )
