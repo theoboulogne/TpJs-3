@@ -12,7 +12,7 @@ Table.Plat(RecherchePlat.name('pate', plats));
 // Fonctionnalités fonctionnelles à implémenter:
 
 //On ajoute un plat( à relier au formulaire d'event pour en ajouter )
-Ajouter.Plat({ name: 'Test', preparation: '30', ingrédients: ['17', '13', '20', '18', '1', '2', '3'], prixPreparation: '3' });
+AjouterPlat.Plat({ name: 'Test', preparation: '30', ingrédients: ['17', '13', '20', '18', '1', '2', '3'], prixPreparation: '3' });
 
 //Changement de filtre principal de la barre de recherche
 let filtre = 'te';
