@@ -16,13 +16,16 @@ var Generation = () => {
     TABLE.appendChild(TH3);
 };
 
-// Génère le tableau si nécessaire, sinon le vide puis le remplit des ingrédients du plat sélectionné
-function ChoixIng(value) { 
-    if(document.getElementById('suppr')==undefined) {Generation();}
-    else while(document.getElementById('suppr')){
-        let suppr = document.getElementById('suppr');
-        suppr.remove();
+function reset(id){
+    while(document.getElementById(id)){
+        let suppr = document.getElementById(id);
+        suppr.remove(); // remove juste les td ?
     }
-    console.log(value);
-    Table.Ingredient(value);
+}
+// Génère le tableau si nécessaire, sinon le vide puis le remplit des ingrédients du plat sélectionné
+function ChoixIng(tab) { 
+    if(document.getElementById('supprIng')==undefined) {Generation();}
+    else reset('supprIng')
+    console.log(tab);
+    Table.Ingredient(tab);
 }
