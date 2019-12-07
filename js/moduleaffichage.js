@@ -1,6 +1,19 @@
 
 var Affichage =  (function(){
     return{
+        Suggestion : (myArray) => 
+        {
+            
+            let elem = document.getElementById("suggestion-recherche");
+            for(let i in myArray){
+                let OPTION = document.createElement('option');
+                OPTION.setAttribute("value", myArray[i].name);
+                OPTION.setAttribute("id", "supprRecherche");
+                elem.appendChild(OPTION);
+                console.log(OPTION);
+            }
+            console.log(myArray);
+        },
 //On génère la balise <tr> dans le tableau sélectionné puis on y ajoute tout les éléments du tableau
         Ligne : (myArray, id) =>
         {
@@ -29,7 +42,7 @@ var Affichage =  (function(){
             INPUT.setAttribute('type', 'radio');
             INPUT.setAttribute('name', 'selection');
             INPUT.setAttribute('id', myArray[0]);
-            INPUT.setAttribute("onClick", 'ChoixIng([' + tab + '])');
+            INPUT.setAttribute("onClick", 'ChoixIng(TabIng([' + tab + ']))');
             console.log(tab);
             TD.appendChild(INPUT)
         },

@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.header').height($(window).height());
 })
 Table.Plat(plats); // on remplit le tableau présent dans le code HTML ( Plats )
-
+Affichage.Suggestion(plats); // on met tout les plats en suggestion
 
 //Test de recherche basique
 ChoixIng(RechercheIng.name('s', ingredients))

@@ -8,18 +8,45 @@
         <link rel="stylesheet" type="text/css" href="./css/menu.css" />
     </head>
     <body>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <img src="logo.jpeg" width="75" height="75" alt="">
+                    <a class="navbar-brand" href="#">Papa's Restaurant - Accueil</a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarText">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Page d'accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Ajouter
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Plat</a>
+                                  <a class="dropdown-item" href="#">Ingredient</a>
+                                </div>
+                        </li>
+                      </ul>
+
+
+                      
+                      <form id="auto-suggest" action="#" method="post">
+                          <input type="text" list="suggestion-recherche" class="search form-control" id = "form-autocomplete-1" name="search" value="Rechercher un plat..." onfocus="if(this.value=='Rechercher un plat...')this.value=''" onblur="if(this.value=='')this.value='Rechercher un plat...'" autocomplete="off"/>
+                          <datalist id="suggestion-recherche"></datalist>
+                      </form>
+                    </div>
+                  </nav>
+
+
+
+                  <!--
             <nav class="navbar navbar-expand-md">
             
-                <img src="logo.jpeg" width="75" height="75" alt="">
-                <a class="navbar-brand" href="#">Papa's Restaurant - Accueil</a>
-                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <form id="auto-suggest" action="#" method="post">
-                    <input type="text" class="search" name="search" value="Rechercher un plat..." onfocus="if(this.value=='Rechercher un plat...')this.value=''" onblur="if(this.value=='')this.value='Rechercher un plat...'" autocomplete="off"/>
-                </form>
-
                 
                 <button onclick="AddDish();">Ajouter un plat</button>
                     
@@ -38,9 +65,14 @@
                         </div>
                 </div>
             </nav>
+
+            -->
+
+
             <br>
             <br>
 
+            <div id="log"></div>
 
         <div id="content">
             <div id="list">

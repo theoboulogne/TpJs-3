@@ -22,10 +22,18 @@ function reset(id){
         suppr.remove(); // remove juste les td ?
     }
 }
+
+function TabIng(tab){ 
+    let Resultat = [];
+    for(let i in tab){
+        Resultat.push(ingredients[tab[i]]);
+    }
+    return Resultat;
+}
 // Génère le tableau si nécessaire, sinon le vide puis le remplit des ingrédients du plat sélectionné
 function ChoixIng(tab) { 
     if(document.getElementById('supprIng')==undefined) {Generation();}
     else reset('supprIng')
-    console.log(tab);
+    //console.log(tab);
     Table.Ingredient(tab);
 }
